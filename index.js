@@ -15,13 +15,13 @@ const html = (data) => `
 <body>
     <div class="card" style="width: 18rem;text-align: center;margin:  100px auto;padding: 1rem;">
         <div class="card-body">
-          <h5 class="card-title bg-primary text-white">${data.name}</h5>
-          <h6 class="card-subtitle">${data.location}</p>
-          <p class="card-text">${data.bio}</p>
-          <p class="card-text">${data.languages}</p>
-          <p class="card-text">${data.mode}</p>
-          <a href="#" class="card-link">${data.linkedin}</a>
-          <a href="#" class="card-link">${data.github}</a>
+          <h5 class="card-title bg-primary text-white">Name: ${data.name}</h5>
+          <h6 class="card-subtitle">Location: ${data.location}</p>
+          <p class="card-text">Bio: ${data.bio}</p>
+          <p class="card-text">Programming Languages: ${data.languages}</p>
+          <p class="card-text">Mode: ${data.mode}</p>
+          <p> LinkedIn: <a href="#" class="card-link">${data.linkedin}</a> </p>
+          <p> GitHub: <a href="#" class="card-link">${data.github}</a> </P>
         </div>
       </div>
 </body>
@@ -48,7 +48,7 @@ inquirer.prompt([
     type: 'checkbox',
     name: 'languages',
     message: 'What programming languages do you know',
-    choices: ['HTML ', 'JavaScript ', 'C++ ', 'Python ']
+    choices: ['HTML', ' JavaScript ', ' C++', ' Python']
 },
 {
     type: 'list',
